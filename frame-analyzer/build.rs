@@ -69,8 +69,6 @@ fn build_ebpf() -> Result<()> {
     let mut ebpf_args = vec![
         "--target",
         "bpfel-unknown-none",
-        "-Z",
-        "build-std=core",
         "--target-dir",
         target_dir_str,
     ];
